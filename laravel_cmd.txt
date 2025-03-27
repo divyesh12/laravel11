@@ -1,0 +1,197 @@
+Basic Laravel Artisan Commands:
+
+    # To start Laravel's built-in development server
+    php artisan serve
+
+    # To clear the application cache
+    php artisan cache:clear
+
+    # To clear route cache
+    php artisan route:clear
+
+    # To clear config cache
+    php artisan config:clear
+
+    # To clear view cache
+    php artisan view:clear
+
+    # To optimize the application
+    php artisan optimize
+
+    # Display list of all available Artisan commands
+    php artisan list
+
+
+Controllers:
+
+    # To create a new controller
+    php artisan make:controller ControllerName
+
+    # To create a resource controller (with index, store, show, update, destroy, etc.)
+    php artisan make:controller ControllerName --resource
+
+    # To create a controller with a model
+    php artisan make:controller ControllerName --model=ModelName
+
+Models:
+
+    # To create a new model
+    php artisan make:model ModelName
+
+    # To create a model with a migration
+    php artisan make:model ModelName --migration
+
+    # To create a model with a controller and migration
+    php artisan make:model ModelName --migration --controller
+
+    # To create a model with a factory and seeder
+    php artisan make:model ModelName --factory --seed
+
+Migrations:
+
+    # To create a new migration
+    php artisan make:migration create_table_name --create=table_name
+
+    # To run all outstanding migrations
+    php artisan migrate
+
+    # To roll back the last database migration
+    php artisan migrate:rollback
+
+    # To reset and re-run all migrations
+    php artisan migrate:refresh
+
+    # To reset all migrations
+    php artisan migrate:reset
+
+    # To rollback a specified number of migrations (example: last 3)
+    php artisan migrate:rollback --step=3
+
+    # To show migration status (which migrations have run)
+    php artisan migrate:status
+
+
+Seeders & Factories:
+
+    # To create a new seeder
+    php artisan make:seeder SeederName
+
+    # To run all seeders
+    php artisan db:seed
+
+    # To run a specific seeder
+    php artisan db:seed --class=SeederName
+
+    # To create a new factory
+    php artisan make:factory FactoryName --model=ModelName
+
+    # To run migrations with seeders
+    php artisan migrate --seed
+
+Routes:
+
+    # To display all registered routes in the application
+    php artisan route:list
+
+    # To clear route cache
+    php artisan route:clear
+
+    # To cache the routes for faster routing
+    php artisan route:cache
+
+Views:
+
+    # To clear compiled Blade view files
+    php artisan view:clear
+
+Configuration:
+
+    # To clear the configuration cache
+    php artisan config:clear
+
+    # To cache the configuration for faster loading
+    php artisan config:cache
+
+Events & Listeners:
+
+    # To create a new event
+    php artisan make:event EventName
+
+    # To create a new listener
+    php artisan make:listener ListenerName --event=EventName
+
+    # To list all registered events and listeners
+    php artisan event:list
+
+Jobs & Queues:
+
+    # To create a new job
+    php artisan make:job JobName
+
+    # To view all available queues
+    php artisan queue:work
+
+    # To restart queue workers
+    php artisan queue:restart
+
+    # To list jobs in the queue
+    php artisan queue:listen
+
+    # To clear all queued jobs
+    php artisan queue:flush
+
+Authentication:
+
+    # To install authentication scaffolding
+    php artisan ui:auth
+
+    # To install authentication with Vue or React scaffolding
+    php artisan ui vue --auth
+    php artisan ui react --auth
+
+Middleware:
+
+    # To create a new middleware
+    php artisan make:middleware MiddlewareName
+
+Requests:
+
+    # To create a form request validation class
+    php artisan make:request RequestName
+
+Notifications & Emails:
+
+    # To create a new notification
+    php artisan make:notification NotificationName
+
+    # To create a new mail class
+    php artisan make:mail MailClassName
+
+Commands:
+
+    # To create a new Artisan command
+    php artisan make:command CommandName
+
+    # To list all registered commands
+    php artisan list
+
+Testing:
+
+    # To run all tests
+    php artisan test
+
+    # To create a new test
+    php artisan make:test TestName
+
+Debugging:
+
+    # To get application environment info
+    php artisan env
+
+    # To display current environment
+    php artisan env
+
+    # To view logs (requires telescope package)
+    php artisan telescope:install
+
+
